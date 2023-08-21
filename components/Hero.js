@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="w-full h-screen z-8">
+    <section className="z-10 w-full h-screen">
       <div className="flex flex-col items-center justify-center w-full h-full gap-6">
         <h1 className="text-center text-7xl max-w-prose ">
           Design tools
