@@ -25,3 +25,53 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.ts-bg {
+  background: rgba(246, 246, 246, 0.36);
+  mix-blend-mode: luminosity;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(67.95704650878906px);
+}
+
+.transparentContainer {
+  border: 1px solid #1a1a1a;
+  background: rgba(139, 139, 139, 0.192);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.orbit-planet {
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 40s linear infinite;
+  border: 2px #ffffff32 solid;
+}
+.planet {
+  animation: spin-up 50s linear infinite;
+}
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-up {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
