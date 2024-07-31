@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main
       style={{ backgroundImage: "url(/Stars.png)" }}
-      className="relative flex flex-col justify-between w-full min-h-screen bg-black "
+      className="relative flex flex-col justify-between w-full h-[200vh] bg-black "
     >
       <Navbar />
       <Hero />

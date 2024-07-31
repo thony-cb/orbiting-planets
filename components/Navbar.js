@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Navbar() {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -81,7 +81,7 @@ function NavbarScroll({ isScrolling }) {
     <motion.nav
       key={1}
       initial="initial"
-      animate={isScrolling ? "animate" : "initial"}
+      animate="animate"
       exit="exit"
       variants={NavAnimations}
       className="fixed z-10 flex justify-between px-4 py-2 rounded-full ts-bg left-1/2 top-10"
